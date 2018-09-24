@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="/css/css.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
+    <title>Labo1 Tweb</title>
+</head>
+
+<body>
+
+<!-- Profiles -->
+<div class="horizSpace"></div>
+
+<div class="horizBloc">
+    <div class="leftSpace">
+    </div>
+
+    <div class="profilBloc">
+        <div class="pictureCol">
+            <div class="photoBloc">
+                <img class="photo" src="img/jimi.jpeg">
+            </div>
+            <div class="followBloc">
+                <button onclick="addFollower('A')">Follow</button>
+            </div>
+        </div>
+
+        <div class="infoCol">
+            <div class="storyBloc">
+                <h1>Jimi Hendrix</h1>
+                <h2>James Marshall Hendrix</h2>
+                <p>
+                    James Marshall Hendrix, né Johnny Allen Hendrix le 27 novembre 1942 à Seattle et mort le 18
+                    septembre 1970 à Londres, plus connu sous le nom de Jimi Hendrix, est un guitariste,
+                    auteur-compositeur et chanteur américain, fondateur du groupe anglo-américain The Jimi Hendrix
+                    Experience, actif de 1966 à 1970.
+                </p>
+            </div>
+            <div class="likeBloc">
+                <div class="countBloc">
+                    <h3 id="followerA">0</h3>
+                    <h4>Followers</h4>
+                </div>
+                <div class="countBloc">
+                    <h3 id="likeA">0</h3>
+                    <h4>Likes <i class="fas fa-thumbs-up" onclick="addLike('A')"></i> </h4>
+                </div>
+                <div class="countBloc">
+                    <h3 id="commentA">0</h3>
+                    <h4>Comments <i class="fas fa-pen" onclick="addComment('A')"></i> </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="interSpace">
+    </div>
+
+    <div class="profilBloc">
+        <div class="pictureCol">
+            <div class="photoBloc">
+                <img class="photo" src="img/jimi.jpeg">
+            </div>
+            <div class="followBloc">
+                <button onclick="addFollower('B')">Follow</button>
+            </div>
+        </div>
+
+        <div class="infoCol">
+            <div class="storyBloc">
+                <h1>Jimi Hendrix</h1>
+                <h2>James Marshall Hendrix</h2>
+                <p>
+                    James Marshall Hendrix, né Johnny Allen Hendrix le 27 novembre 1942 à Seattle et mort le 18
+                    septembre 1970 à Londres, plus connu sous le nom de Jimi Hendrix, est un guitariste,
+                    auteur-compositeur et chanteur américain, fondateur du groupe anglo-américain The Jimi Hendrix
+                    Experience, actif de 1966 à 1970.
+                </p>
+            </div>
+            <div class="likeBloc">
+                <div class="countBloc">
+                    <h3 id="followerB">0</h3>
+                    <h4>Followers</h4>
+                </div>
+                <div class="countBloc">
+                    <h3 id="likeB">0</h3>
+                    <h4>Likes <i class="fas fa-thumbs-up" onclick="addLike('B')"></i> </h4>
+                </div>
+                <div class="countBloc">
+                    <h3 id="commentB">0</h3>
+                    <h4>Comments <i class="fas fa-pen" onclick="addComment('B')"></i> </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="rightSpace">
+    </div>
+</div>
+
+<!-- Commentaires -->
+<div id="Comments" class="horizBloc">
+    <div class="leftSpace">
+    </div>
+
+    <div id="blocCommentA" class="commentBloc">
+        <div class="commentCol" >
+            <h1>Commentaires</h1>
+            <h2 id="nameA"></h2>
+            <p id="contentA"></p>
+        </div>
+    </div>
+
+    <div class="interSpace">
+    </div>
+
+    <div id="blocCommentB" class="commentBloc">
+        <div class="commentCol" >
+            <h1>Commentaires</h1>
+            <h2 id="nameB"></h2>
+            <p id="contentB"></p>
+        </div>
+    </div>
+
+    <div class="rightSpace">
+    </div>
+</div>
+
+<!-- Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+            Pseudo:<br>
+            <input id="formName" type="text" name="pseudo" value="José">
+            <br>
+            Comment:<br>
+            <textarea id="formContent" name="comment" value="J'aime les pommes"></textarea>
+            <br><br>
+            <button id="modalbtn" onclick="submit()">submit</button>
+    </div>
+</div>
+
+<script src="/js/js.js"></script>
+</body>
+</html>
+
